@@ -2,6 +2,8 @@
 
 Projekt Strapi Gun Shop to RESTful API służące do zarządzania informacjami o broniach, sklepach, a także powiązaniach między nimi poprzez tablicę asocjacyjną.
 
+Rafał M. - 14798
+
 ## Funkcjonalności
 
 - CRUD dla broni, sklepów, kalibrów, producentów, i typów broni.
