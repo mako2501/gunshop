@@ -15,9 +15,21 @@ Projekt Strapi Gun Shop to RESTful API służące do zarządzania informacjami o
 
 ## Przykłady użycia po zbudowaniu i uruchomieniu projektu
 
+Logowanie w celu uzyskania jwt
 ![Opis alternatywny](img/logowanie.JPG)
+
+Domyślnie nie można z poziomu content-type builder zaznaczyc by pole relacji było wymagane, można to wykonać wpisem w ../schema.json
+![Opis alternatywny](img/require.JPG)
+
+Regex dla godzin otwarcia sklepu
+![Opis alternatywny](img/regex.JPG)
+
+Budowa tablicy Guns
+![Opis alternatywny](img/strukturagun.JPG)
+
+Przechowywanie broni w poszczególnych sklepach - tablica asocjacyjna z ilością
 ![Opis alternatywny](img/get%20po%20asocjacyjnej.JPG)
-![Opis alternatywny](img/logowanie.JPG)
+
 ![Opis alternatywny](img/getpopulate.JPG)
 ![Opis alternatywny](img/post1%20-%20dodawanie%20typu.JPG)
 ![Opis alternatywny](img/post2%20-%20spr%20dodania%20typu.JPG)
