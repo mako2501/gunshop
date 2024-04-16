@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "guns",
+  "info": {
+    "singularName": "gun",
+    "pluralName": "guns",
+    "displayName": "gun ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "required": true,
+      "unique": false,
+      "minLength": 3
+    },
+    "description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "blocks"
+    },
+    "price": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "decimal",
+      "min": 0,
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::type.type"
+    },
+    "calibres": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::calibre.calibre"
+    },
+    "manufacturer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::manufacturer.manufacturer",
+      "inversedBy": "guns"
+    },
+    "barrel": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::barrel.barrel"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "manufacturers",
+  "info": {
+    "singularName": "manufacturer",
+    "pluralName": "manufacturers",
+    "displayName": "manufacturer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "blocks"
+    },
+    "guns": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gun.gun",
+      "mappedBy": "manufacturer"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shop_guns",
+  "info": {
+    "singularName": "shop-gun",
+    "pluralName": "shop-guns",
+    "displayName": "shop gun",
+    "description": "tablica asocjacyjna"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "quantity": {
+      "default": 0,
+      "type": "integer",
+      "min": 0
+    },
+    "shop": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shop.shop",
+      "required": true
+    },
+    "gun": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::gun.gun",
+      "required": true
+    }
+  }
+}

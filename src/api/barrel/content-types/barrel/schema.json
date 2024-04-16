@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "barrels",
+  "info": {
+    "singularName": "barrel",
+    "pluralName": "barrels",
+    "displayName": "barrel",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "length": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "blocks"
+    }
+  }
+}

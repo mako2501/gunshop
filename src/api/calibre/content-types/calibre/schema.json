@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "calibres",
+  "info": {
+    "singularName": "calibre",
+    "pluralName": "calibres",
+    "displayName": "calibre"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "calibre": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "blocks"
+    }
+  }
+}
